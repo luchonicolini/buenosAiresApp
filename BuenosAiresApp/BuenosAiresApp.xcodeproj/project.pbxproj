@@ -18,7 +18,9 @@
 		1945BB952D88BEE2009F7AA6 /* BuenosAiresAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BB942D88BEE2009F7AA6 /* BuenosAiresAppTests.swift */; };
 		1945BB9F2D88BEE2009F7AA6 /* BuenosAiresAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BB9E2D88BEE2009F7AA6 /* BuenosAiresAppUITests.swift */; };
 		1945BBA12D88BEE2009F7AA6 /* BuenosAiresAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BBA02D88BEE2009F7AA6 /* BuenosAiresAppUITestsLaunchTests.swift */; };
-		19592E402D8DB4E7001905F5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19592E3F2D8DB4E7001905F5 /* ErrorView.swift */; };
+		19592E422D8DC27F001905F5 /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19592E412D8DC27F001905F5 /* NetworkErrorView.swift */; };
+		19592E462D8DC8EB001905F5 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19592E452D8DC8EB001905F5 /* CustomSearchBar.swift */; };
+		19592E482D8DCF4E001905F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19592E472D8DCF4E001905F5 /* Extensions.swift */; };
 		19A25A2E2D8B3DA300B65ACF /* MeshGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A25A2D2D8B3DA300B65ACF /* MeshGradientView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +57,9 @@
 		1945BB9E2D88BEE2009F7AA6 /* BuenosAiresAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuenosAiresAppUITests.swift; sourceTree = "<group>"; };
 		1945BBA02D88BEE2009F7AA6 /* BuenosAiresAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuenosAiresAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1945BBB22D88C752009F7AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		19592E3F2D8DB4E7001905F5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		19592E412D8DC27F001905F5 /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
+		19592E452D8DC8EB001905F5 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		19592E472D8DCF4E001905F5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		19A25A2D2D8B3DA300B65ACF /* MeshGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +154,9 @@
 				192ED6D12D8A13630085D581 /* DolarViewModel.swift */,
 				192ED6D32D8A13B40085D581 /* DolarView.swift */,
 				19A25A2D2D8B3DA300B65ACF /* MeshGradientView.swift */,
-				19592E3F2D8DB4E7001905F5 /* ErrorView.swift */,
+				19592E412D8DC27F001905F5 /* NetworkErrorView.swift */,
+				19592E452D8DC8EB001905F5 /* CustomSearchBar.swift */,
+				19592E472D8DCF4E001905F5 /* Extensions.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -289,10 +295,12 @@
 				19A25A2E2D8B3DA300B65ACF /* MeshGradientView.swift in Sources */,
 				1945BB862D88BEDD009F7AA6 /* ContentView.swift in Sources */,
 				1945BB842D88BEDD009F7AA6 /* BuenosAiresAppApp.swift in Sources */,
+				19592E422D8DC27F001905F5 /* NetworkErrorView.swift in Sources */,
+				19592E482D8DCF4E001905F5 /* Extensions.swift in Sources */,
+				19592E462D8DC8EB001905F5 /* CustomSearchBar.swift in Sources */,
 				192ED6CE2D8A11020085D581 /* Modelo.swift in Sources */,
 				192ED6D42D8A13B40085D581 /* DolarView.swift in Sources */,
 				192ED6D22D8A13630085D581 /* DolarViewModel.swift in Sources */,
-				19592E402D8DB4E7001905F5 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

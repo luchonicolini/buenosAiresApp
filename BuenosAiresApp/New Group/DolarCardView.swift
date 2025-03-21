@@ -60,13 +60,13 @@ struct DolarCardView: View {
             VStack(spacing: 16) {
                 // Precios
                 HStack(spacing: 20) {
-                    precioView(label: "COMPRA", value: dolar.compra, iconName: "arrow.down.circle.fill", iconColor: .green)
+                    precioView(label: "Compra", value: dolar.compra, iconName: "arrow.down.circle.fill", iconColor: .green)
                     
                     Divider()
                         .frame(width: 1, height: 60)
                         .background(Color.primary.opacity(0.2))
                     
-                    precioView(label: "VENTA", value: dolar.venta, iconName: "arrow.up.circle.fill", iconColor: .red)
+                    precioView(label: "Venta", value: dolar.venta, iconName: "arrow.up.circle.fill", iconColor: .red)
                 }
                 .padding(.top, 8)
                 
@@ -104,8 +104,8 @@ struct DolarCardView: View {
     private var headerView: some View {
         HStack {
             Text("Dólar \(dolar.nombre)")
-                .font(.system(size: 22, weight: .bold, design: .rounded))
-                .foregroundColor(.white)
+                .font(.system(size: 24, weight: .bold, design: .rounded))
+                .foregroundStyle(.white)
             Spacer()
         }
         .padding(EdgeInsets(top: 16, leading: 20, bottom: 16, trailing: 20))
@@ -198,14 +198,19 @@ struct DolarCardView: View {
     // MARK: - Helper Functions
     
     private func formatearFecha(_ fechaString: String) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        guard let fecha = formatter.date(from: fechaString) else { return fechaString }
+        // Formato de entrada (el formato que recibe la API)
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .short
-        formatter.locale = Locale(identifier: "es_AR")
-        return formatter.string(from: fecha)
+        // Convertir la cadena de entrada a una fecha
+        guard let fecha = inputFormatter.date(from: fechaString) else { return fechaString }
+        
+        // Formato de salida (el formato que deseas mostrar)
+        let outputFormatter = DateFormatter()
+        outputFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        // Devolver la fecha formateada
+        return outputFormatter.string(from: fecha)
     }
 }
 
